@@ -11,11 +11,9 @@ import { addToCart, removeFromCart } from "../redux/actions/cartActions";
 
 const CartScreen = () => {
   const dispatch = useDispatch();
-/* 就是引入useDispatch */
+  /* 就是引入useDispatch */
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-
-  useEffect(() => {}, []);
 
   const qtyChangeHandler = (id, qty) => {
     dispatch(addToCart(id, qty));
