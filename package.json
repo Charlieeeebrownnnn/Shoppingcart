@@ -1,13 +1,12 @@
 {
   "scripts": {
-  "start": "node backend/server.js",
-  "server": "nodemon backend/server.js",
-  "client": "npm start --prefix frontend",
-  "dev": "concurrently \"npm run server\" \"npm run client\"",
-  "data:import": "node backend/seederScript",
-  "heroku-postbuild":"npm run dev"
-},
-
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seederScript",
+    "build": "npm run dev"
+  },
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
