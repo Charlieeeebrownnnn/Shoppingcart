@@ -5,7 +5,7 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seederScript",
-    "build": "npm run dev"
+    "my-custom-start": "npm run dev" // this will run instead
   },
   "dependencies": {
     "dotenv": "^16.0.3",
